@@ -1,0 +1,42 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pip>=23.0.1",
+    "setuptools>=67.6.1",
+    "wheel>=0.40.0",
+    "jupyterlab>=3.6.3",
+    "ipython>=8.12.0",
+    "black>=23.3.0",
+    "ruff>=0.0.261",
+]
+
+[project]
+name = "pyannote-whisper-chatgpt"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Masato Onodera", email = "monodera@naoj.org" }]
+dependencies = [
+    "pydub>=0.25.1",
+    "pyannote-audio>=2.1.1",
+    "torch==1.11.0",
+    "torchvision==0.12.0",
+    "torchaudio==0.11.0",
+    "pandas>=2.0.0",
+    "hmmlearn @ git+https://github.com/hmmlearn/hmmlearn.git",
+    "openai-whisper>=20230314",
+    "pyannote-whisper @ git+https://github.com/yinruiqing/pyannote-whisper.git",
+    "openai>=0.27.4",
+    "tiktoken>=0.3.1",
+    "logzero>=1.7.0",
+    "tenacity>=8.2.2",
+]
+requires-python = ">=3.9,<3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+speech2note = "pyannote_whisper_chatgpt.cli:speech2note"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

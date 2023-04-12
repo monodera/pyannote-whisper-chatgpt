@@ -1,0 +1,53 @@
+## Output from chunk 0
+
+Meeting Minute:
+
+Topic: All About Leadership - A Conversation with Fiona Watt
+
+Date: [Date]
+
+Attendees: [Names]
+
+Agenda:
+
+- Julie Gould introduces the podcast series and the guest speaker, Fiona Watt.
+- Fiona Watt talks about her leadership roles and shares her experience as the director of EMBO.
+- Fiona Watt discusses her leadership style and how she learned her leadership skills.
+- Fiona Watt talks about what bad leadership looks like.
+- Julie Gould asks Fiona Watt about her opinion on whether science and the scientific endeavor is served well by its leaders.
+
+Summary:
+
+Julie Gould introduced the podcast series, All About Leadership, and the guest speaker, Fiona Watt, a British stem cell biologist. Fiona Watt talked about her different leadership roles, including being the first female executive chair of the Medical Research Council in the UK and the director of EMBO. She also shared her experience and insights as a leader in the scientific community. Fiona Watt discussed how she learned her leadership skills, which was mainly through self-learning and observing other people. She also talked about her leadership style, which involves consulting with others before making a decision and respecting the aspirations of younger scientists. Fiona Watt also shared her thoughts on what bad leadership looks like, which includes leaders who are in it for themselves and not doing anything for the organization. Finally, Julie Gould asked Fiona Watt about her opinion on whether science and the scientific endeavor is served well by its leaders. 
+
+Action Items:
+
+- None.
+
+## Output from chunk 1
+
+Meeting Minute:
+
+Attendees: Fiona Watt (SPEAKER_00), Julie Gould (SPEAKER_01)
+
+Agenda:
+1. Discussion on the government's role in funding science
+2. Importance of leadership for early career researchers
+3. Fiona Watt's role as the director of Enbow
+4. Strategies and decision-making process for Enbow
+
+Discussion:
+1. Fiona Watt discussed the government's role in funding science and how it is a political decision. She suggested that science leaders should make decisions about how the money should be spent instead of politicians. She also talked about the trust issue between scientists and the government.
+2. Julie Gould asked Fiona Watt about the importance of leadership for early career researchers. Fiona suggested that PhD students could take leadership responsibility in a particular project and explore different opportunities. She also emphasized the importance of being curious and speaking to people.
+3. Fiona Watt talked about her role as the director of Enbow and how it is a responsibility to do what is best for the life science community. She also mentioned that part of her working week is spent doing science.
+4. Fiona Watt discussed the strategies and decision-making process for Enbow. She sees her leadership role as leading by consensus but also making connections and suggestions to help move the organization forward. She emphasized the importance of consulting and debating but also requiring an element of direction.
+
+Action Items:
+1. Fiona Watt plans to convene a small group of people who have done it well in different countries to be better advising governments.
+2. PhD students are advised to take leadership responsibility in a particular project and explore different opportunities.
+3. Enbow needs to consider a future in which all of their journals are open access.
+4. Enbow needs to constantly look at each of the tasks they are responsible for and make sure they are doing them as well as they possibly can.
+
+Adjournment:
+Julie Gould thanked Fiona Watt for taking the time to speak and ended the meeting.
+

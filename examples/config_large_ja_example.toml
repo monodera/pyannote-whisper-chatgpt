@@ -1,0 +1,32 @@
+title = "Configuration file for pyannote-whisper-chatgpt"
+
+[pyannote]
+token = "hf_**********"
+num_speakers = -1
+min_speakers = -1
+max_speakers = -1
+
+# https://github.com/openai/whisper
+[whisper]
+
+[whisper.model]
+name = "large"
+device = "cpu"
+
+[whisper.transcribe]
+language = "ja"
+
+# https://platform.openai.com/docs/api-reference/chat
+[openai]
+model = "gpt-3.5-turbo"
+max_tokens = 512        # default =16\
+# max_tokens = 256
+temperature = 0.3
+prompt = """
+以下の会話を要約してください。会話は音声ファイルから抽出されたもののため、多少不明瞭な部分があるかもしれません。その場合は文脈を推測する必要があります。データはCSVフォーマットになっており、カラムの内容はそれぞれ左から開始タイムスタンプ、終了タイムスタンプ、発言者、発言、になっています。要約を作成する際には、誰が何を言ったかを明確にし、箇条書きで出力してください。
+"""
+prompt_total = """
+以下の一連の文章を読んで全体を要約してください。文章はもともとはひとつのコンテンツを容量の関係で分割して gpt-3.5-turbo をもちいて要約したものを結合したものです。要約を作成する際には、誰が何を言ったかを明確にし、箇条書きで出力してください。
+"""
+organization = "org-**********"
+api_key = "sk-**********"

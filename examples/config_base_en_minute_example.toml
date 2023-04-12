@@ -1,0 +1,51 @@
+title = "Configuration file for pyannote-whisper-chatgpt"
+
+[pyannote]
+token = "hf_**********"
+
+[pyannote.diarization]
+# A negative value means None for "num_speakers", "min_speakers", and "max_speakers"
+# "num_speakers" and ("min_speakers" and "max_speakers") are exclusive.
+num_speakers = -1
+min_speakers = -1 # negative value means None
+max_speakers = -1 # negative value means None
+
+
+# https://github.com/openai/whisper
+[whisper]
+# Available models are the following:
+# - "tiny"
+# - "base"
+# - "small"
+# - "medium"
+# - "large"
+# - "tiny.en"
+# - "base.en"
+# - "small.en"
+# - "medium.en"
+# - "large.en"
+
+[whisper.model]
+name = "base.en"
+# device should be one of the following:
+# - "cpu"
+# - "cuda" (NVIDIA GPU)
+# - "mps" (Apple Silicon, but not supported with whisper v20230314)
+device = "cpu"
+
+[whisper.transcribe]
+language = "en"
+
+# https://platform.openai.com/docs/api-reference/chat
+[openai]
+model = "gpt-3.5-turbo"
+max_tokens = 512
+temperature = 0.3
+prompt = """
+Please summarize the following conversation in a meeting and generate the meeting minute. The conversation is a transcription from an audio file, so sometimes you need to guess the context. The conversation is in a CSV format where the first, second, third, and fourth columns indicate the start time, end time, speaker, and text, respectively. When making a minute, please keep the original speaker IDs and clarify who said what. The output must be itemized.
+"""
+prompt_total = """
+Please read the following meeting minutes and generate the grand summary of the minutes. Note that the text is combined one for a long meeting note which is split into chunks so that each part can be summarized by using gpt-3.5-turbo. When making a summary, please keep the original speaker IDs clarify who said what. The output must be itemized.
+"""
+organization = "org-**********"
+api_key = "sk-**********"

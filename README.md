@@ -22,6 +22,8 @@ The following packages and their dependencies are required. Some packages need t
 - tiktoken
 - logzero
 - tenacity (to be used, not currently)
+- libsndfile (should be installed separately with, e.g., apt, brew, etc.)
+- ffmpeg (should be installed separately with, e.g., apt, brew, etc.)
 
 ## Installation
 

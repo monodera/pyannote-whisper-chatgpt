@@ -3,6 +3,7 @@
 import copy
 import json
 import os
+import sys
 
 import openai
 import pandas as pd
@@ -12,12 +13,15 @@ from logzero import logger
 from pyannote.audio import Pipeline
 from pydub import AudioSegment
 
-try:
-    # Python >=3.11 has tomllib as a built-in library
-    import tomllib as tomli
-except ImportError:
-    # For Python <3.11
-    import tomli
+if sys.version_info >= (3, 11):
+    try:
+        import tomllib
+    except ImportError:
+        # Help users on older alphas
+        if not TYPE_CHECKING:
+            import tomli as tomllib
+else:
+    import tomli as tomllib
 
 
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
@@ -31,7 +35,7 @@ def num_tokens_from_string(string: str, encoding_name: str) -> int:
 def load_config(conffile, length_secret=10):
     logger.info(f"Loading and processing config file: {conffile}")
     with open(conffile, mode="rb") as fp:
-        config = tomli.load(fp)
+        config = tomllib.load(fp)
 
     for k in ["num_speakers", "min_speakers", "max_speakers"]:
         if k in config["pyannote"]["diarization"]:
